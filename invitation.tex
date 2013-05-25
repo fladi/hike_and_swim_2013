@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.2 (15/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{apacite}
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}}
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+
+\usepackage{graphicx}
+\usepackage{pstricks}
+\usepackage{pst-barcode}
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Scientifica Ambulo $\bullet$ Juni 2013 $\bullet$ Vol. I, No. 1} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Die Ötschergräben}} % Article title
+
+\author{
+Michael Fladischer
+\and
+Martina Schlaipfer
+\and
+Matthias Schlaipfer
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+
+\noindent Vereinzelt auch als der ``Grand Canyon Österreichs'' bezeichnet, liegen die Ötschergräben
+südlich am Fuße des Ötscher-Gebirgsmassivs. Der sechs Kilometer lange Graben wird vom Ötscherbach durchzogen,
+der auf ener Höhe von ca. 1100 Meter über dem Meeresspiegel entspringt. Bekannt für sein klares Wasser und
+die Wasserfälle, die entlang des Ötscherbaches in den Graben stürzen, sind die Ötschergräben ein beliebtes
+Ausflugsziel für Wanderer.
+
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2} % Two-column layout throughout the main article text
+
+\section{Einleitung}
+
+\lettrine[nindent=0em,lines=3]{D} as Ötscher-Gebirgsmassiv wird geologisch dem Alpenvorland als Teil der
+Kalkalpen zugerechnet. Zusammen mit dem Schneeberg und dem Wiener Becken bildet es die Kalkvoralpen. \cite{SH:2012}
+
+%------------------------------------------------
+
+\section{Ablauf}
+
+%------------------------------------------------
+
+\section{Teilnahme}
+
+Die Abstimmung des Termins erfolgt über einen \href{http://www.doodle.com/m6ywebgyvg6632ig}{Doodle}. Smartphone-Benutzer
+können den QR-code scannen um auf die entsprechende Seite zu gelangen.
+
+\href{http://www.doodle.com/m6ywebgyvg6632ig}{
+\pspicture(\columnwidth,\columnwidth)
+\psbarcode{http://www.doodle.com/m6ywebgyvg6632ig}{height=2.8 width=2.8}{qrcode}
+\endpspicture
+}
+
+Es stehen fünf Termine mit je drei Uhrzeiten zu Auswahl, wobei die Uhrzeit festlegt, wann wir uns am Parkplatz in wienerbruck/Erlaufklause treffen.
+
+%------------------------------------------------
+
+\section{Rückfragen}
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{apacite}
+\bibliography{literature}
+
+%----------------------------------------------------------------------------------------
+
+\end{multicols}
+
+\end{document}
