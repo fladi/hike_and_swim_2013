@@ -34,15 +34,20 @@
 \usepackage{booktabs} % Horizontal rules in tables
 \usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
 \usepackage{hyperref} % For hyperlinks in the PDF
-\hypersetup{
+\hypersetup{%
   colorlinks   = true, %Colours links instead of ugly boxes
+  breaklinks   = true,
   urlcolor     = blue, %Colour for external hyperlinks
   linkcolor    = blue, %Colour of internal links
-  citecolor   = red %Colour of citations
+  citecolor    = black %Colour of citations
 }
+\usepackage[vertfit]{breakurl}
 
 \usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
 \usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{wasysym} 
+\usepackage{marvosym}
 
 \usepackage{apacite}
 
@@ -56,7 +61,10 @@
 
 \usepackage{graphicx}
 \usepackage{pstricks}
+\usepackage{pstricks-add}
 \usepackage{pst-barcode}
+\usepackage{pst-bar}
+\usepackage{pst-plot}
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
@@ -65,13 +73,16 @@
 \fancyhead[C]{Scientifica Ambulo $\bullet$ Juni 2013 $\bullet$ Vol. I, No. 1} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
+\usepackage{cleveref}
+
+
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
 \title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Die Ötschergräben}} % Article title
 
-\author{
+\author{%
 Michael Fladischer
 \and
 Martina Schlaipfer
@@ -114,20 +125,96 @@ Ausflugsziel für Wanderer.
 \lettrine[nindent=0em,lines=3]{D} as Ötscher-Gebirgsmassiv wird geologisch dem Alpenvorland als Teil der
 Kalkalpen zugerechnet. Zusammen mit dem Schneeberg und dem Wiener Becken bildet es die Kalkvoralpen. \cite{SH:2012}
 
+Das Ötschermassiv liegt im Gebiet des Naturparks ötscher-Tormäuer, welcher 1970 als Folge einer Protestbewegung gegen ein neues Wasserkraftwerk an der Erlauf
+entstand \cite{NOT:2013:Online}. Das Gebiet um den Naturpark ist vor allem seit der Zuwanderung eines Bärenmännchens aus Slowenien Anfang der 1970er Jahre und
+der darauf folgenden Ansiedelung von drei weiteren Bären in den nördlichen Kalkalpen bekannt.
+
+Im Sommer des Jahres 2012 unternahmen kälteresistente Mitglieder der bergbegeisterten Familie Maierhofer gleich zwei Wanderungen, welche auch ein Bad in den
+Bächen abseits der Wanderwege einschloß. Dies waren zuerst in der Bärenschützklamm und dann, im größeren Rahmen, in den Ötschergräben, nahe den Mirafällen.
+
+% I forgot how to bar chart :-)
+    %\psset{unit=0.4in}%
+    %\begin{pspicture}(0,-0.5)(4,11)%
+        %\psgrid
+        %\readpsbardata{\data}{feedback.csv}%
+        %\psgrid[xunit=1.5in,gridlabels=0,%
+            %subgriddiv=0,griddots=20](0,0)(1,11)%
+        %\psaxes[axesstyle=frame,Ox=0,Dx=1,labels=y,%
+            %ticks=y](0,0)(2,11)%
+        %\psbarchart[
+            %barstyle={red,blue}
+        %]{\data}%
+    %\end{pspicture}
+    %\caption{Rückmeldungen zu Bärenschützklamm und Ötschergräben 2012}
+    %\label{fig:feedback}
+%\begin{figure}
+%\resizebox{\columnwidth}{!}{
+%\begin{pspicture}(-2.1,-2.1)(2.1,2.1)
+%\degrees[100]
+%\pswedge[fillstyle=solid,fillcolor=gray,hatchcolor=gray]{2}{0}{17 }
+%\rput(1.2; 8 ){\psframebox*{\small 17 \%}}
+%\uput{2.2}[ 8 ](0;0){\Large A él}
+%\pswedge[fillstyle=hlines,fillcolor=gray,hatchcolor=gray]{2}{17 }{42 }
+%\rput(1.2;29 ){\psframebox*{\Large 25 \%}}
+%\uput{2.2}[29 ](0;0){\Large A dém}
+%\pswedge[fillstyle=solid,fillcolor=white,hatchcolor=white]{2}{42 }{58 }
+%\rput(1.2;50 ){\psframebox*{\Large 17 \%}}
+%\uput{2.2}[50 ](0;0){\Large égal}
+%\pswedge[fillstyle=hlines,fillcolor=gray,hatchcolor=gray]{2}{58 }{83 }
+%\rput(1.2;71 ){\psframebox*{\Large 25 \%}}
+%\uput{2.2}[71 ](0;0){\Large B dém}
+%\pswedge[fillstyle=solid,fillcolor=gray,hatchcolor=gray]{2}{83 }{100 }
+%\rput(1.2;92 ){\psframebox*{\Large 17 \%}}
+%\uput{2.2}[92 ](0;0){\Large B él}
+%\rput(0;0){\psframebox*{\bfseries 0/0}}
+%\end{pspicture}
+%}
+%\end{figure}
+
+Aufgrund des Begeisterung einer representativen Population der Teilnehmer aus dem Jahr 2012 soll auch heuer wieder eine Wanderung in das Gebiet der
+Ötschergräben unter möglichst umfassender Teilnahme aller Familienmitglieder stattfinden.
+
 %------------------------------------------------
 
 \section{Ablauf}
+
+\begin{itemize}
+    \item Wo treffen wir uns?
+    \item Wo geht es hin?
+    \item Welche Zwischenstopps gibt es?
+    \item Wann kommen wird in etwa zu den Mirafällen?
+    \item Kehren wir beim Ötscherhias ein?
+    \item Wann geht es zurück zu den Autos?
+    \item Benutzen wir die Mariazellerbahn?
+\end{itemize}
+
+
+%------------------------------------------------
+
+\section{Ausrüstung}
+
+\lettrine[nindent=0em,lines=3]{E} ine Wanderung, welche mit einem Bad im Gebirgsbach oder in der Gumpe eines Wasserfalls kombiniert wird, macht es erforderlich,
+ein Mindestmaß an empfohlener Ausrüstung mitzuführen.
+
+\begin{itemize}
+    \item Badebekleidung (unter der Wanderkleidung oder separat).
+    \item Trockene Unterwäsche zum Wechseln.
+    \item Ein Badetuch.
+    \item Sonnencreme, auch während der Wanderung zu benutzen.
+    \item Badeschlapfen (optional).
+\end{itemize}
 
 %------------------------------------------------
 
 \section{Teilnahme}
 
-Die Abstimmung des Termins erfolgt über einen \href{http://www.doodle.com/m6ywebgyvg6632ig}{Doodle}. Smartphone-Benutzer
-können den QR-code scannen um auf die entsprechende Seite zu gelangen.
+\lettrine[nindent=0em,lines=3]{D} ie Abstimmung des Termins erfolgt über einen \href{http://www.doodle.com/m6ywebgyvg6632ig}{Doodle}. Smartphone-Benutzer
+können den QR-code scannen um auf die entsprechende Seite zu gelangen. Für Benutzer von handelsüblichen PDF-Readern genügt ein Klick auf das blau hervorgehobene
+Wort.
 
-\href{http://www.doodle.com/m6ywebgyvg6632ig}{
+\href{http://www.doodle.com/m6ywebgyvg6632ig}{%
 \pspicture(\columnwidth,\columnwidth)
-\psbarcode{http://www.doodle.com/m6ywebgyvg6632ig}{height=2.8 width=2.8}{qrcode}
+\psbarcode{http://www.doodle.com/m6ywebgyvg6632ig}{height=2.4 width=2.4}{qrcode}
 \endpspicture
 }
 
@@ -136,6 +223,15 @@ Es stehen fünf Termine mit je drei Uhrzeiten zu Auswahl, wobei die Uhrzeit fest
 %------------------------------------------------
 
 \section{Rückfragen}
+
+\lettrine[nindent=0em,lines=3]{B} ei allfälligen Rückfragen stehen die Autoren selbstverständlich zur Verfügung. Es können auch Kommentare im Doodle
+ hinterlassen werden. Sollte es passieren, dass nach der Zusage zu einem Termin dieser doch nicht wahrgenommen werden kann, so bitten wir um kurze Mitteilung.
+
+\begin{tabular}{l l}
+\Letter \ \href{mailto:michael@fladi.at}{Michael Fladischer} & \phone \ 0660/4806299 \\
+\Letter \ \href{mailto:mschlaipfer@gmx.net}{Martina Schlaipfer} & \phone \ 0680/1302672 \\
+\Letter \ \href{mailto:m.schlaipfer@gmail.com}{Matthias Schlaipfer} & \phone \ 0680/2333950 \\
+\end{tabular}
 
 
 %----------------------------------------------------------------------------------------
