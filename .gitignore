@@ -1,6 +1,9 @@
-*
-!.gitignore
-!.latexmkrc
-!*.tex
-!*.bib
-!*.csv
+Figures/*-eps-converted-to.pdf
+invitation.aux
+invitation.bbl
+invitation.blg
+invitation.fdb_latexmk
+invitation.log
+invitation.out
+invitation.pdf
+
