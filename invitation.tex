@@ -46,8 +46,9 @@
 \usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
 \usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
 
-\usepackage{wasysym} 
+\usepackage{wasysym}
 \usepackage{marvosym}
+\usepackage{gensymb}
 
 \usepackage{apacite}
 
@@ -70,10 +71,10 @@
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Scientifica Ambulo $\bullet$ Juni 2013 $\bullet$ Vol. I, No. 1} % Custom header text
+\fancyhead[C]{Scientifica Ambulo $\bullet$ Juli 2013 $\bullet$ Vol. I, No. 1} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
-\usepackage{cleveref}
+\usepackage[ngerman]{cleveref}
 
 
 %----------------------------------------------------------------------------------------
@@ -125,55 +126,17 @@ Ausflugsziel für Wanderer.
 \lettrine[nindent=0em,lines=3]{D} as Ötscher-Gebirgsmassiv wird geologisch dem Alpenvorland als Teil der
 Kalkalpen zugerechnet. Zusammen mit dem Schneeberg und dem Wiener Becken bildet es die Kalkvoralpen. \cite{SH:2012}
 
-Das Ötschermassiv liegt im Gebiet des Naturparks Ötscher-Tormäuer, welcher 1970 als Folge einer Protestbewegung gegen ein neues Wasserkraftwerk an der Erlauf
+Geographisch liegt das Gebirge im Gebiet des Naturparks Ötscher-Tormäuer, welcher 1970 als Folge einer Protestbewegung gegen ein neues Wasserkraftwerk an der Erlauf
 entstand \cite{NOT:2013:Online}. Das Gebiet um den Naturpark ist vor allem seit der Zuwanderung eines Bärenmännchens aus Slowenien Anfang der 1970er Jahre und
 der darauf folgenden Ansiedelung von drei weiteren Bären in den nördlichen Kalkalpen bekannt.
 
-Im Sommer des Jahres 2012 unternahmen kälteresistente Mitglieder (Abbildung~\ref{fig:bad}) der
+Im Sommer des Jahres 2012 unternahmen kälteresistente Mitglieder (\cref{fig:bad}) der
 bergbegeisterten Familie Maierhofer gleich zwei Wanderungen, welche auch ein Bad in den
 Bächen abseits der Wanderwege einschloß. Dies waren zuerst in der Bärenschützklamm und dann, im größeren Rahmen, in den Ötschergräben, nahe den Mirafällen.
 
-% I forgot how to bar chart :-)
-    %\psset{unit=0.4in}%
-    %\begin{pspicture}(0,-0.5)(4,11)%
-        %\psgrid
-        %\readpsbardata{\data}{feedback.csv}%
-        %\psgrid[xunit=1.5in,gridlabels=0,%
-            %subgriddiv=0,griddots=20](0,0)(1,11)%
-        %\psaxes[axesstyle=frame,Ox=0,Dx=1,labels=y,%
-            %ticks=y](0,0)(2,11)%
-        %\psbarchart[
-            %barstyle={red,blue}
-        %]{\data}%
-    %\end{pspicture}
-    %\caption{Rückmeldungen zu Bärenschützklamm und Ötschergräben 2012}
-    %\label{fig:feedback}
-%\begin{figure}
-%\resizebox{\columnwidth}{!}{
-%\begin{pspicture}(-2.1,-2.1)(2.1,2.1)
-%\degrees[100]
-%\pswedge[fillstyle=solid,fillcolor=gray,hatchcolor=gray]{2}{0}{17 }
-%\rput(1.2; 8 ){\psframebox*{\small 17 \%}}
-%\uput{2.2}[ 8 ](0;0){\Large A él}
-%\pswedge[fillstyle=hlines,fillcolor=gray,hatchcolor=gray]{2}{17 }{42 }
-%\rput(1.2;29 ){\psframebox*{\Large 25 \%}}
-%\uput{2.2}[29 ](0;0){\Large A dém}
-%\pswedge[fillstyle=solid,fillcolor=white,hatchcolor=white]{2}{42 }{58 }
-%\rput(1.2;50 ){\psframebox*{\Large 17 \%}}
-%\uput{2.2}[50 ](0;0){\Large égal}
-%\pswedge[fillstyle=hlines,fillcolor=gray,hatchcolor=gray]{2}{58 }{83 }
-%\rput(1.2;71 ){\psframebox*{\Large 25 \%}}
-%\uput{2.2}[71 ](0;0){\Large B dém}
-%\pswedge[fillstyle=solid,fillcolor=gray,hatchcolor=gray]{2}{83 }{100 }
-%\rput(1.2;92 ){\psframebox*{\Large 17 \%}}
-%\uput{2.2}[92 ](0;0){\Large B él}
-%\rput(0;0){\psframebox*{\bfseries 0/0}}
-%\end{pspicture}
-%}
-%\end{figure}
+Aufgrund der Begeisterung einer representativen Population der Teilnehmer aus dem Jahr 2012 soll auch heuer wieder eine Wanderung in das Gebiet der
+Ötschergräben unter möglichst umfassender Beteiligung aller Familienmitglieder stattfinden.
 
-Aufgrund des Begeisterung einer representativen Population der Teilnehmer aus dem Jahr 2012 soll auch heuer wieder eine Wanderung in das Gebiet der
-Ötschergräben unter möglichst umfassender Teilnahme aller Familienmitglieder stattfinden.
 \begin{figure}[H]
 \begin{center}
   \includegraphics[trim = 0 15 0 0, clip, natwidth=600, natheight=800, width=.45\textwidth]{Figures/oetschergraeben.jpg}
@@ -194,47 +157,64 @@ Aufgrund des Begeisterung einer representativen Population der Teilnehmer aus de
 \label{fig:bad}
 \end{figure*}
 
-\begin{itemize}
-    \item Wo treffen wir uns?
-    \item Wo geht es hin?
-    \item Welche Zwischenstopps gibt es?
-    \item Wann kommen wird in etwa zu den Mirafällen?
-    \item Kehren wir beim Ötscherhias (Abbildung~\ref{fig:oetschergraeben}) ein?
-    \item Wann geht es zurück zu den Autos?
-    \item Benutzen wir die Mariazellerbahn?
-\end{itemize}
+Als Wanderroute für das Jahr 2013 wird eine andere als 2012 vorgeschlagen um eine maximale Erwärmung aller Teilnehmer zu gewährleisten. Ausgangsort für die Tour
+ist Mitterbach, nördlich von Mariazell. Die Teilnehmer werden dort zu einem Zeitpunkt versammelt werden, für den die Methodik der Ermittlung in
+\cref{sec:teilnahme} erörtert wird.
 
+Nach einer Vollständigkeitsprüfung begeben sich die Probanden mit Hilfe des Sessellifts auf die Gemeindealpe wo dann der Fussmarsch beginnt. Das erste Ziel der
+Route ist das Gipfelkreuz am "`Eisernen Herrgott"' wo eine Pause eingelegt werden kann, um die Probanden auf erwartete psychologische und körperliche
+Effekte des Badens im kalten Wasser des Ötscherbaches zu befragen. Über die Zwischenstation "`Schutzhaus Vorderötscher"' geht es hinab in die Ötschergräben.
+
+Die Route erreicht den Ötscherbach in etwa auf der Höhe der Schleierfälle und ab hier folgt die Route dem Verlauf der Ötschergräben, vorbei an den Mirafällen,
+der ersten und bereits bekannten Bademöglichkeit in der Gumpe direkt unter dem Wasserfall. Kurz nach den Mirafällen bietet sich dann die zweite bekannte
+Bademöglichkeit, in der besonders tiefen Auswaschung zwischen zwei Gesteinsplatten direkt im Ötscherbach. Nach dieser Station führt die Route weiter talauswärts
+zur Jausenstation "`Ötscherhias"' wo sich die Probanden wieder erwärmen und stärken können.
+
+Ab diesem Punkt bieten sich zwei Möglichkeiten die Tour zu beenden.
+
+\begin{enumerate}
+    \item Wie auch im Jahr 2012, weiter den Ötschergräben folgend in Richtung Wienerbruck. Dabei würde die Route dann auch die im Jahr 2012 erkundete Stelle mit
+        dem tief ausgewaschenen Becken unterhalb eines breiten Wasserfalls erreichen, wo sich die letzte Möglicheit zum Baden bieten würde. Weiter geht es dann
+        zur Haltestelle Wienerbruck von dort mit der Mariazellerbahn zurück nach Mitterbach.
+    \item Ausstieg aus den Ötschergräben hinter dem Ötscherhias, und Zustieg zur Mariazellerbahn bei der Haltstelle Erlaufklause, ebenfalls zurück nach
+        Mitterbach.
+\end{enumerate}
 
 %------------------------------------------------
 
 \section{Ausrüstung}
 
 \lettrine[nindent=0em,lines=3]{E} ine Wanderung, welche mit einem Bad im Gebirgsbach oder in der Gumpe eines Wasserfalls kombiniert wird, macht es erforderlich,
-ein Mindestmaß an empfohlener Ausrüstung mitzuführen.
+ein Mindestmaß an empfohlener Ausrüstung mitzuführen. Die folgende Aufzählung sollte als Checkliste während den Vorbereitungen für die Wanderung herangezogen
+werden.
 
 \begin{itemize}
-    \item Badebekleidung (unter der Wanderkleidung oder separat).
-    \item Trockene Unterwäsche zum Wechseln.
-    \item Ein Badetuch.
-    \item Sonnencreme, auch während der Wanderung zu benutzen.
-    \item Badeschlapfen (optional).
+    \item[\Square] Badebekleidung (unter der Wanderkleidung oder separat).
+    \item[\Square] Trockene Unterwäsche zum Wechseln.
+    \item[\Square] Ein oder mehrere Badetücher.
+    \item[\Square] Sonnencreme, auch während der Wanderung zu benutzen.
+    \item[\Square] Badeschlapfen (optional).
+    \item[\Square] Kälteresistenz bis 10\celsius.
 \end{itemize}
 
 %------------------------------------------------
 
 \section{Teilnahme}
+\label{sec:teilnahme}
 
 \lettrine[nindent=0em,lines=3]{D} ie Abstimmung des Termins erfolgt über einen \href{http://www.doodle.com/m6ywebgyvg6632ig}{Doodle}. Smartphone-Benutzer
 können den QR-code scannen um auf die entsprechende Seite zu gelangen. Für Benutzer von handelsüblichen PDF-Readern genügt ein Klick auf das blau hervorgehobene
 Wort.
 
-%\href{http://www.doodle.com/m6ywebgyvg6632ig}{%
-%\pspicture(\columnwidth,\columnwidth)
-%\psbarcode{http://www.doodle.com/m6ywebgyvg6632ig}{height=2.4 width=2.4}{qrcode}
-%\endpspicture
-%}
-
 Es stehen fünf Termine mit je drei Uhrzeiten zu Auswahl, wobei die Uhrzeit festlegt, wann wir uns am Parkplatz in Wienerbruck/Erlaufklause treffen.
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=.45\textwidth]{Figures/qr-code.eps}
+\end{center}
+\caption{Scannen!}
+\label{fig:qr-codqr-code}
+\end{figure}
 
 %------------------------------------------------
 
